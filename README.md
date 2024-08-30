@@ -17,11 +17,11 @@ A flexible tool for monitoring and protecting against DDoS attacks with many opt
 
 ---
 
-## Overview
+## 📖 Overview
 
 DDoS Tamer helps detect suspicious activity on your websites, such as changes in page size and response to requests. You can configure monitoring to receive alerts about potential DDoS attacks.
 
-## Functions
+## 🖥️ Functions
 
 - **Response Monitoring**: Checks server response time.
 - **Page Size Monitoring**: Tracks changes in the size of web pages.
@@ -29,12 +29,12 @@ DDoS Tamer helps detect suspicious activity on your websites, such as changes in
 - **Flexible configuration**: Customization of check intervals and notification options.
 - **Logging**: Writing the results of checks to a file or outputting them to the terminal.
 
-## Requirements
+## ⚠️ Requirements
 
 - Python 3.7 or later
 - Libraries: `requests`, `argparse`, `colorama`
 
-## Installation
+## 📝 Installation
 
 1. Clone the repository:
  ```bash
@@ -51,7 +51,7 @@ DDoS Tamer helps detect suspicious activity on your websites, such as changes in
  pip install -r requirements.txt
  ```
 
-## Usage
+## 🚀 Usage
 
 ### Main options
 
@@ -98,7 +98,7 @@ DDoS Tamer helps detect suspicious activity on your websites, such as changes in
 | `-l`, `--log` | Log file.
 
 
-## Examples
+## 🔢 Examples
 
 List websites that take less than 2 seconds to load overall. With regularity every 10 seconds. And the total number of checks - 5 times:
 ```bash
@@ -120,7 +120,7 @@ Returns all websites that do not satisfy the condition that the page returns a "
 python ddos-tamper.py -f sites.txt -l ddos_log.txt -sc 200 -i 15 -o error
 ```
 
-## Configuration
+## 📏 Configuration
 
 By default, the program uses "sites.txt" as a database of sites to be monitored.
 There you should enter the URLs of the sites. For examples:
@@ -131,6 +131,6 @@ https://instagram.com
 ```
 Or use the -f flag to specify your text file.
 
-## Contribution
+## 💡 Contribution
 
 Contribution to the project is welcome! To make changes, please open a Pull Request or create an Issue if you have suggestions or problems.
