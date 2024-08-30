@@ -57,11 +57,17 @@ DDoS Tamer helps detect suspicious activity on your websites, such as changes in
 
 | Parameter | Description |
 |----------------|-------------------------------- ----------------------------------------------------- --------|
+
 | `-h`, `--help` | Show help. |
+
 | `-at`, `--answer-time` | The maximum allowable response time (in seconds). |
+
 | `-rs`, `--resize` | Checking for page size changes (in kilobytes). |
+
 | `-ps`, `--page-size` | Minimum page size for notification. |
+
 | `-sc`, `--status-code` | Page output depending on the status code. For example, 403, 404, 200, etc. |
+
 
 ### Additional options
 
