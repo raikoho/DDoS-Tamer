@@ -4,20 +4,6 @@
 
 This program is designed to use various functions and parameters to make checking the availability or load or changes of many websites at once comfortable and automatic. And also uses a logging and notification system to report a problem.
 
----
-## Contents
-
-- [Overview](#overview)
-- [Functions](#functions)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Examples](#examples)
-- [Configuration](#configuration)
-- [Contribution](#contribution)
-
----
-
 ## 📖 Overview
 
 DDoS Tamer helps detect suspicious activity on your websites, such as changes in page size and response to requests. You can configure monitoring to receive alerts about potential DDoS attacks.
