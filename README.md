@@ -7,7 +7,7 @@ This program is designed to use various functions and parameters to make checkin
 ---
 ## Contents
 
-- [Review](#review)
+- [Overview](#overview)
 - [Functions](#functions)
 - [Requirements](#requirements)
 - [Installation](#installation)
