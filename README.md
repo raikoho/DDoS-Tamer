@@ -56,6 +56,7 @@ DDoS Tamer helps detect suspicious activity on your websites, such as changes in
 ### Main options
 
 | Parameter | Description |
+
 |----------------|-------------------------------- ----------------------------------------------------- --------|
 
 | `-h`, `--help` | Show help. |
@@ -72,19 +73,29 @@ DDoS Tamer helps detect suspicious activity on your websites, such as changes in
 ### Additional options
 
 | Parameter | Description |
+
 |----------------|-------------------------------- ----------------------------------------------------- --------|
+
 | `-i`, `--interval` | Check interval (in seconds). |
+
 | `-c`, `--count` | Number of checks to complete. |
 
 ### Additional parameters
 
 | Parameter | Description |
+
 |----------------|-------------------------------- ----------------------------------------------------- --------|
+
 | `-o`, `--output` | Output of results (`success`, `error`, `all`). |
+
 | | `success' - there are fewer responses than the specified number (matches the condition). |
+
 | | `error' - more answers than the specified number (does not meet the condition). |
+
 | | `all' - all answers. |
+
 | `-f`, `--file` | File with URL for monitoring. |
+
 | `-l`, `--log` | Log file.
 
 
