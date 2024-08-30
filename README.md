@@ -1,6 +1,5 @@
-# DDoS-Tamer
 A flexible tool for monitoring and protecting against DDoS attacks with many options
-![DDoS Tamer Banner](https://example.com/banner-image.png) <!-- Замініть на URL вашого банера -->
+![DDoS Tamer Banner](ddos-tamer.gif) 
 
 **DDoS Tamer** is a powerful tool for monitoring and protecting against DDoS attacks, which allows you to check the availability of websites, monitor page size changes and ensure effective protection of your network.
 
