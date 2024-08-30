@@ -20,7 +20,7 @@ signal.signal(signal.SIGINT, signal_handler)
 def print_banner():
     banner = """
   ________________________________
- /         DDoS Tamper           /|
+ /         DDoS Tamer            /|
 |   _______  _______  _______   | |
 |  |  site || site  || site  |  | |
 |  |_______||_______||_______|  | |
@@ -30,7 +30,7 @@ def print_banner():
 |_______________________________|/
     """
     print(colored(banner, "cyan", attrs=["bold"]))
-    print(colored("Welcome to the DDoS Tamper - powerful DDoS Monitoring Tool!\n", "magenta", attrs=["bold"]))
+    print(colored("Welcome to the DDoS Tamer - powerful DDoS Monitoring Tool!\n", "magenta", attrs=["bold"]))
 
 
 def read_sites(file_path):
