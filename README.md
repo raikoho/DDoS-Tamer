@@ -38,7 +38,7 @@ DDoS Tamer helps detect suspicious activity on your websites, such as changes in
 
 1. Clone the repository:
  ```bash
- git clone https://github.com/yourusername/ddos-tamer.git
+ git clone https://github.com/raikoho/DDoS-Tamer.git
  ```
 
 2. Go to the project directory:
@@ -52,26 +52,34 @@ DDoS Tamer helps detect suspicious activity on your websites, such as changes in
  ```
 
 ## Usage
--h, --help : Show help.
 
--at, --answer-time : Maximum allowable response time (in seconds).
--rs, --resize : Check for page size changes (in kilobytes).
--ps, --page-size : Minimum page size for notification.
--sc, --status-code: page output depending on the code status. For example, 403, 404, 200, etc.
+### Main options
 
-Secondary options:
--i, --interval : Check interval (in seconds).
--c, --count : Number of checks to complete.
+| Parameter | Description |
+|----------------|-------------------------------- ----------------------------------------------------- --------|
+| `-h`, `--help` | Show help. |
+| `-at`, `--answer-time` | The maximum allowable response time (in seconds). |
+| `-rs`, `--resize` | Checking for page size changes (in kilobytes). |
+| `-ps`, `--page-size` | Minimum page size for notification. |
+| `-sc`, `--status-code` | Page output depending on the status code. For example, 403, 404, 200, etc. |
 
-Additional options:
--o, --output : Output of results (success, error, all).
-     success - an answer that is less than the specified number (satisfies the condition)
-     error - an answer that is more than the specified number (does not satisfy the condition)
-     all - all answers
-     
--f, --file : File with URL to monitor.
--l, --log : Log file.
+### Additional options
 
+| Parameter | Description |
+|----------------|-------------------------------- ----------------------------------------------------- --------|
+| `-i`, `--interval` | Check interval (in seconds). |
+| `-c`, `--count` | Number of checks to complete. |
+
+### Additional parameters
+
+| Parameter | Description |
+|----------------|-------------------------------- ----------------------------------------------------- --------|
+| `-o`, `--output` | Output of results (`success`, `error`, `all`). |
+| | `success' - there are fewer responses than the specified number (matches the condition). |
+| | `error' - more answers than the specified number (does not meet the condition). |
+| | `all' - all answers. |
+| `-f`, `--file` | File with URL for monitoring. |
+| `-l`, `--log` | Log file.
 
 
 ## Examples
