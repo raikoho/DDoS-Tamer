@@ -1,7 +1,7 @@
-A flexible tool for monitoring and protecting against DDoS attacks with many options
 ![DDoS Tamer Banner](ddos-tamer.gif) 
+A flexible tool for monitoring and protecting against DDoS attacks with many options
 
-**DDoS Tamer** is a powerful tool for monitoring and protecting against DDoS attacks, which allows you to check the availability of websites, monitor page size changes and ensure effective protection of your network.
+**DDoS Tamer** is a powerful tool for monitoring and protecting against DDoS attacks or checking, which allows you to check the availability of websites, status code, monitor page size changes and ensure effective protection of your network.
 
 ---
 ## Contents
@@ -52,22 +52,49 @@ DDoS Tamer helps detect suspicious activity on your websites, such as changes in
  ```
 
 ## Usage
+-h, --help : Show help.
 
 -at, --answer-time : Maximum allowable response time (in seconds).
 -rs, --resize : Check for page size changes (in kilobytes).
 -ps, --page-size : Minimum page size for notification.
+-sc, --status-code: page output depending on the code status. For example, 403, 404, 200, etc.
+
+Secondary options:
 -i, --interval : Check interval (in seconds).
+-c, --count : Number of checks to complete.
+
+Additional options:
 -o, --output : Output of results (success, error, all).
+     success - an answer that is less than the specified number (satisfies the condition)
+     error - an answer that is more than the specified number (does not satisfy the condition)
+     all - all answers
+     
 -f, --file : File with URL to monitor.
 -l, --log : Log file.
--c, --count : Number of checks to complete.
--h, --help : Show help.
+
+
 
 ## Examples
 
-python main.py -at 2 -i 10
-python main.py -rs 500 -l log.txt
-python main.py -ps 50 -i 10 -o success -f urls.txt -c 5
+List websites that take less than 2 seconds to load overall. With regularity every 10 seconds. And the total number of checks - 5 times:
+```bash
+python ddos-tamper.py -at 2 -i 10 -o success -c 5
+```
+
+Display websites with periodic changes with a size difference greater than 400 KB. With regularity every 10 seconds. And the total number of checks - 5 times. With output of results to a text file.
+```bash
+python ddos-tamper.py -rs 400 -i 10 -o error -c 5 -l log.txt
+```
+
+This example will only display pages (websites) that are less than or equal to 50 KB if you use the -o success option. With regularity every 15 seconds. And the total number of checks is 10 times. With reading sites from own text file.
+```bash
+python ddos-tamper.py -ps 50 -i 15 -o success -f urls.txt -c 10
+```
+
+Returns all websites that do not satisfy the condition that the page returns a "200" or "400" code. Instead, it displays all answers except those specified. With regularity every 15 seconds. And the total number of checks - infinity.
+```bash
+python ddos-tamper.py -f sites.txt -l ddos_log.txt -sc 200 -i 15 -o error
+```
 
 ## Configuration
 
