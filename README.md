@@ -2,7 +2,7 @@
 
 **DDoS Tamer** is a powerful tool for monitoring and protecting against DDoS attacks or checking, which allows you to check the availability of an infinite number of websites, status code, monitor page size changes and ensure effective protection of your network.
 
-This program is designed to use various functions and parameters to make checking the availability of many websites at once comfortable and automatic.
+This program is designed to use various functions and parameters to make checking the availability or load or changes of many websites at once comfortable and automatic. And also uses a logging and notification system to report a problem.
 
 ---
 ## Contents
